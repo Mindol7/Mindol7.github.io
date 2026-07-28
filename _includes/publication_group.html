@@ -12,7 +12,7 @@
 
       <p class="publication-authors">
       {% for author in publication.authors %}
-        {% if author.self %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+        {% if author.self %}<strong class="author-self">{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
       {% endfor %}
       </p>
 
@@ -24,8 +24,8 @@
       <p class="publication-metrics">
         {% if publication.indexing %}<a href="{{ publication.indexing_url }}" target="_blank" rel="noopener"><strong>{{ publication.indexing }}</strong></a>{% endif %}
         {% if publication.scopus_quartile %}<span aria-hidden="true"> · </span><a href="{{ publication.scopus_url }}" target="_blank" rel="noopener"><strong>{{ publication.scopus_quartile }}</strong></a>{% endif %}
-        {% if publication.impact_factor %}<span aria-hidden="true"> · </span><a href="{{ publication.impact_factor_url }}" target="_blank" rel="noopener"><strong>Impact Factor: {{ publication.impact_factor }}</strong></a>{% if publication.impact_factor_year %} ({{ publication.impact_factor_year }}){% endif %}{% endif %}
         {% if publication.acceptance_rate %}<span aria-hidden="true"> · </span><a href="{{ publication.metrics_url }}" target="_blank" rel="noopener"><strong>Acceptance Rate: {{ publication.acceptance_rate }}</strong></a>{% endif %}
+        {% if publication.impact_factor %}<span aria-hidden="true"> · </span><a href="{{ publication.impact_factor_url }}" target="_blank" rel="noopener"><strong>Impact Factor: {{ publication.impact_factor }}</strong></a>{% if publication.impact_factor_year %} ({{ publication.impact_factor_year }}){% endif %}{% endif %}
       </p>
       {% endif %}
 

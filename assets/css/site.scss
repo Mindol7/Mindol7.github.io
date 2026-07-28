@@ -6,6 +6,7 @@
   --site-accent: #1f5f8b;
   --site-accent-strong: #174968;
   --site-accent-soft: #eaf3f8;
+  --site-author-highlight: #187a35;
   --site-on-accent: #ffffff;
   --site-border: #d9e2e8;
   --site-surface: #ffffff;
@@ -510,6 +511,11 @@ button:focus-visible {
 .publication-metrics,
 .patent-translation {
   font-size: 0.94rem;
+}
+
+.author-self {
+  color: var(--site-author-highlight);
+  font-weight: 700;
 }
 
 .publication-metrics {

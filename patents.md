@@ -22,7 +22,7 @@ permalink: /patents/
 
     <p class="publication-authors">
     {% for author in patent.authors %}
-      {% if author.self %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% if author.self %}<strong class="author-self">{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
     {% endfor %}
     </p>
 
