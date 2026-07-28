@@ -16,7 +16,7 @@ international_journals:
     indexing_url: https://mjl.clarivate.com/search-results?issn=2666-2817
     scopus_url: https://www.scopus.com/sourceid/21101032719
     indexing: "SCI(E)"
-    scopus_quartile: "Scopus Q1"
+    # scopus_quartile: "Scopus Q1"
     acceptance_rate: "9%"
     impact_factor: "3.1"
 
@@ -41,7 +41,7 @@ domestic_journals:
       - name: Jiheun Jung
       - name: Seong-Je Cho
     venue: "The Journal of Korean Institute of Next Generation Computing, 20(4), 34–45"
-    venue_short: "KINGComputing"
+    venue_short: "한국차세대컴퓨팅학회"
     year: 2024
     indexing: KCI
     doi: https://doi.org/10.23019/kingpc.20.4.202408.003
@@ -56,7 +56,7 @@ domestic_conferences:
       - name: Jungmin Yim
       - name: Seehwan Yoo
     venue: "Korea Computer Congress (KCC), Jeju, Korea"
-    venue_short: "KCC"
+    venue_short: "한국컴퓨터종합학술대회 (KCC)"
     year: 2025
     award: "Excellent Paper Award"
     page: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318571
