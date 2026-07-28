@@ -58,7 +58,7 @@ domestic_conferences:
     venue: "Korea Computer Congress (KCC), Jeju, Korea"
     venue_short: "한국컴퓨터종합학술대회 (KCC)"
     year: 2025
-    award: "Excellent Paper Award"
+    award: "[Excellent Paper Award]"
     page: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318571
 
   - title: "Detecting Timestamp Manipulation in Bluetooth-Connected Smartphone and Automotive Infotainment System"
