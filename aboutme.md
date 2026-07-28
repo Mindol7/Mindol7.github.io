@@ -36,7 +36,7 @@ Before joining Korea University, I studied Mobile Systems Engineering at [Dankoo
   <p class="entry-subtitle">B.S. in Mobile Systems Engineering · Yongin, South Korea</p>
   <ul>
     <li><strong>GPA: 4.25 / 4.25</strong> · <strong>Major GPA: 4.25 / 4.25</strong></li>
-    <li><strong>Graduated first in class</strong></li>
+    <li><strong>First Class Graduated</strong></li>
     <li>Military leave of absence during 2021–2023</li>
   </ul>
 </article>
@@ -49,7 +49,7 @@ Before joining Korea University, I studied Mobile Systems Engineering at [Dankoo
     <span class="entry-date">Mar. 2026 – Present</span>
   </div>
   <p class="entry-subtitle">Digital Forensic Research Center, Korea University</p>
-  <p>Research in <strong>digital forensics, AI forensics, and drone forensics</strong>.</p>
+  <p>Research in <strong>Digital forensics and AI forensics</strong>.</p>
 </article>
 
 <article class="entry">
@@ -58,10 +58,10 @@ Before joining Korea University, I studied Mobile Systems Engineering at [Dankoo
     <span class="entry-date">Mar. 2024 – Jun. 2025</span>
   </div>
   <p class="entry-subtitle">Dankook University · Advisor: Prof. Seong-Je Cho</p>
-  <p>Research in <strong>digital forensics and vehicle forensics</strong>.</p>
+  <p>Research in <strong>Digital forensics and Vehicle forensics</strong>.</p>
 </article>
 
-### Selected Research Projects {#selected-research-projects}
+### Research Projects {#selected-research-projects}
 
 <ul class="detail-list project-list">
   <li>

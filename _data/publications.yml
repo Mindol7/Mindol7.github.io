@@ -15,10 +15,10 @@ international_journals:
     impact_factor_url: https://www.sciencedirect.com/journal/forensic-science-international-digital-investigation/about/insights
     indexing_url: https://mjl.clarivate.com/search-results?issn=2666-2817
     scopus_url: https://www.scopus.com/sourceid/21101032719
-    indexing: "SCIE-indexed"
-    scopus_quartile: "Scopus Q1 (selected subject categories)"
-    impact_factor: "3.1"
+    indexing: "SCI(E)"
+    scopus_quartile: "Scopus Q1"
     acceptance_rate: "9%"
+    impact_factor: "3.1"
 
 international_conferences:
   - title: "Effects of Timestamp Manipulation in a Car Audio Video Navigation System Connected to a Smartphone via Bluetooth: A Preliminary Study"
@@ -79,9 +79,9 @@ patents:
     title_en: "Device and Method for Detecting Time Manipulation in a Network-Synchronized Environment"
     authors:
       - name: Seong-Je Cho
-      - name: Jiheun Jung
       - name: Minhyuk Cho
         self: true
+      - name: Jiheun Jung
     application_number: "10-2024-0156364"
     registration_number: "10-2990306"
     status: Registered
