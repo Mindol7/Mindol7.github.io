@@ -1,6 +1,6 @@
 {% if site.avatar %}
 <a class="image avatar" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-  <img src="{{ site.avatar | relative_url }}" alt="Portrait of {{ site.title }}">
+  <img src="{{ site.avatar | relative_url }}" alt="{{ site.avatar_alt | default: site.title }}">
 </a>
 {% else %}
 <a class="avatar-fallback" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">

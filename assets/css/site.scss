@@ -2,6 +2,7 @@
 ---
 
 :root {
+  color-scheme: light;
   --site-accent: #1f5f8b;
   --site-accent-strong: #174968;
   --site-accent-soft: #eaf3f8;
@@ -14,27 +15,14 @@
   --site-nav-bg: rgba(255, 255, 255, 0.96);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --site-accent: #67c2ef;
-    --site-accent-strong: #9dd9f6;
-    --site-accent-soft: #183747;
-    --site-on-accent: #10212a;
-    --site-border: #3a4654;
-    --site-surface: #20212b;
-    --site-surface-muted: #292b36;
-    --site-text: #dadbdf;
-    --site-text-muted: #aeb6bf;
-    --site-nav-bg: rgba(32, 33, 43, 0.96);
-  }
-}
-
 html {
+  background: var(--site-surface);
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
 }
 
 body {
+  background: var(--site-surface);
   color: var(--site-text);
 }
 
@@ -107,20 +95,13 @@ button:focus-visible {
 .site-nav-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   box-sizing: border-box;
   width: 960px;
   max-width: 100%;
   min-height: 3.25rem;
   margin: 0 auto;
   padding: 0 1rem;
-}
-
-.site-brand {
-  color: var(--site-accent-strong);
-  font-size: 1.05rem;
-  font-weight: 600;
-  text-decoration: none;
 }
 
 .site-nav-links {
@@ -165,6 +146,24 @@ button:focus-visible {
 
 .profile-card {
   padding-top: 2.75rem;
+}
+
+.profile-card .image.avatar {
+  display: block;
+  width: 6.5rem;
+  margin: 0 auto 1.4rem;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.profile-card .image.avatar img {
+  display: block;
+  box-sizing: border-box;
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 0;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .site-content {
@@ -391,12 +390,6 @@ button:focus-visible {
 .publication-award {
   color: #a84613;
   font-weight: 600;
-}
-
-@media (prefers-color-scheme: dark) {
-  .publication-award {
-    color: #ffb480;
-  }
 }
 
 .publication-links {
