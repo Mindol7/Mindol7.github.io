@@ -27,16 +27,16 @@ permalink: /patents/
     </p>
 
     <dl class="patent-numbers">
-      <div>
-        <dt>Application No.</dt>
-        <dd>{{ patent.application_number }}</dd>
-      </div>
       {% if patent.registration_number %}
       <div>
         <dt>Registration No.</dt>
         <dd>{{ patent.registration_number }}</dd>
       </div>
       {% endif %}
+      <div>
+        <dt>Application No.</dt>
+        <dd>{{ patent.application_number }}</dd>
+      </div>
     </dl>
 
     {% if patent.source %}
