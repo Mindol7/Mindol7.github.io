@@ -358,9 +358,8 @@ button:focus-visible {
   list-style: none;
   color: var(--site-accent-strong);
   cursor: pointer;
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 0.14em;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .news-more summary::-webkit-details-marker {
@@ -384,6 +383,11 @@ button:focus-visible {
 .contact-list li {
   margin-bottom: 0.6rem;
   line-height: 1.55;
+}
+
+.contact-link {
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .interest-grid {
