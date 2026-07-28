@@ -1,0 +1,51 @@
+{% if site.avatar %}
+<a class="image avatar" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+  <img src="{{ site.avatar | relative_url }}" alt="Portrait of {{ site.title }}">
+</a>
+{% else %}
+<a class="avatar-fallback" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+  <span aria-hidden="true">{{ site.profile_initials }}</span>
+</a>
+{% endif %}
+
+{% if page.url == "/" %}
+<h1>{{ site.title }}</h1>
+{% else %}
+<p class="profile-name">{{ site.title }}</p>
+{% endif %}
+
+{% if site.position %}
+<p class="profile-position">{{ site.position }}</p>
+{% endif %}
+
+{% if site.affiliation %}
+<p class="profile-affiliation">
+  {% if site.affiliation_link %}
+  <a href="{{ site.affiliation_link }}" rel="noopener">{{ site.affiliation }}</a>
+  {% else %}
+  {{ site.affiliation }}
+  {% endif %}
+</p>
+{% endif %}
+
+{% if site.location %}
+<p class="profile-location">{{ site.location }}</p>
+{% endif %}
+
+{% if site.email %}
+<p class="profile-email"><a href="{{ site.email_link }}">{{ site.email }}</a></p>
+{% endif %}
+
+<nav class="profile-links" aria-label="Profile links">
+  {% if site.cv_link %}
+  <a href="{{ site.cv_link | relative_url }}">CV</a>
+  {% endif %}
+
+  {% if site.github_link %}
+  <a href="{{ site.github_link }}" target="_blank" rel="noopener">GitHub</a>
+  {% endif %}
+
+  {% if site.linkedin %}
+  <a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+  {% endif %}
+</nav>

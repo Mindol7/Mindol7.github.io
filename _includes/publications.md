@@ -1,51 +1,81 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
-
-<div class="publications">
-<ol class="bibliography">
-
-{% for link in site.data.publications.main %}
-
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% if link.conference_short %} 
-    <abbr class="badge">{{ link.conference_short }}</abbr>
-    {% endif %}
-    {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors }}</div>
-      <div class="periodical"><em>{{ link.conference }}</em>
+<section class="publication-section" aria-labelledby="journal-publications">
+  <h2 id="journal-publications">Journal Articles</h2>
+  <ol class="publication-list" role="list">
+  {% for publication in site.data.publications.journals %}
+    <li class="publication-item">
+      <div class="publication-heading">
+        <span class="venue-badge">{{ publication.venue_short }}</span>
+        <span class="publication-year">{{ publication.year }}</span>
       </div>
-    <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <h3>{{ publication.title }}</h3>
+      <p class="publication-authors">
+      {% for author in publication.authors %}
+        {% if author.self %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+      </p>
+      <p class="publication-venue"><em>{{ publication.venue }}</em></p>
+      {% if publication.doi or publication.page %}
+      <p class="publication-links">
+        {% if publication.doi %}<a href="{{ publication.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+        {% if publication.page %}<a href="{{ publication.page }}" target="_blank" rel="noopener">Details</a>{% endif %}
+      </p>
       {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
-      {% endif %}
-    </div>
-  </div>
-</div>
-</li>
-<br>
+    </li>
+  {% endfor %}
+  </ol>
+</section>
 
-{% endfor %}
+<section class="publication-section" aria-labelledby="conference-publications">
+  <h2 id="conference-publications">Conference Papers</h2>
+  <ol class="publication-list" role="list">
+  {% for publication in site.data.publications.conferences %}
+    <li class="publication-item">
+      <div class="publication-heading">
+        <span class="venue-badge">{{ publication.venue_short }}</span>
+        <span class="publication-year">{{ publication.year }}</span>
+      </div>
+      <h3>{{ publication.title }}</h3>
+      <p class="publication-authors">
+      {% for author in publication.authors %}
+        {% if author.self %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+      </p>
+      <p class="publication-venue"><em>{{ publication.venue }}</em></p>
+      {% if publication.award %}<p class="publication-award">{{ publication.award }}</p>{% endif %}
+      {% if publication.page or publication.slides %}
+      <p class="publication-links">
+        {% if publication.page %}<a href="{{ publication.page }}" target="_blank" rel="noopener">Details</a>{% endif %}
+        {% if publication.slides %}<a href="{{ publication.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+      </p>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ol>
+</section>
 
-</ol>
-</div>
+<section class="publication-section" aria-labelledby="patents">
+  <h2 id="patents">Patents</h2>
+  <ol class="publication-list" role="list">
+  {% for patent in site.data.publications.patents %}
+    <li class="publication-item">
+      <div class="publication-heading">
+        <span class="venue-badge">{{ patent.status }}</span>
+        <span class="publication-year">{{ patent.date }}</span>
+      </div>
+      <h3 lang="ko">{{ patent.title }}</h3>
+      <p class="patent-translation">{{ patent.title_en }}</p>
+      <p class="publication-authors">
+      {% for author in patent.authors %}
+        {% if author.self %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+      </p>
+      <p class="publication-venue">
+        Application {{ patent.application_number }}{% if patent.registration_number %} · Registration {{ patent.registration_number }}{% endif %}
+      </p>
+      {% if patent.source %}
+      <p class="publication-links"><a href="{{ patent.source }}" target="_blank" rel="noopener" aria-label="Source for patent: {{ patent.title_en }}">Source</a></p>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ol>
+</section>

@@ -1,22 +1,92 @@
-main:
+journals:
+  - title: "AEGIS: A Robust Log Preservation and Anti-Forensics Resilient Framework for Android Digital Investigation"
+    authors:
+      - name: Minhyuk Cho
+        self: true
+      - name: Seungmin Lee
+      - name: Sungwon Jung
+      - name: Seong-Je Cho
+      - name: Minkyu Park
+    venue: "Forensic Science International: Digital Investigation"
+    venue_short: "FSI: Digital Investigation"
+    year: 2026
+    featured: true
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+  - title: "Log Analysis Techniques for Identifying Timestamp Manipulation in Linux and Android Systems"
+    authors:
+      - name: San Lee
+      - name: Min Hyuk Cho
+        self: true
+      - name: Jiheun Jung
+      - name: Seong-Je Cho
+    venue: "The Journal of Korean Institute of Next Generation Computing, 20(4), 34–45"
+    venue_short: "KINGComputing"
+    year: 2024
+    doi: https://doi.org/10.23019/kingpc.20.4.202408.003
+    featured: true
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+conferences:
+  - title: "Security Vulnerability Analysis and Exploitation of the Copy-and-Patch JIT Compiler Mechanism in CPython"
+    authors:
+      - name: Minhyuk Cho
+        self: true
+      - name: Minseo Jeong
+      - name: Subin Kang
+      - name: Jungmin Yim
+      - name: Seehwan Yoo
+    venue: "Korea Computer Congress (KCC), Jeju, Korea"
+    venue_short: "KCC"
+    year: 2025
+    award: "Excellent Paper Award"
+    featured: true
+
+  - title: "Effects of Timestamp Manipulation in a Car Audio Video Navigation System Connected to a Smartphone via Bluetooth: A Preliminary Study"
+    authors:
+      - name: Minhyuk Cho
+        self: true
+      - name: Sunjae Kim
+      - name: Seong-Je Cho
+    venue: "The 10th International Conference on Next Generation Computing (ICNGC), Clark, Philippines, 173–176"
+    venue_short: "ICNGC"
+    year: 2024
+    page: https://www.earticle.net/Article/A468837
+
+  - title: "Detecting Timestamp Manipulation in Bluetooth-Connected Smartphone and Automotive Infotainment System"
+    authors:
+      - name: Minhyuk Cho
+        self: true
+      - name: San Lee
+      - name: Jiheun Jung
+      - name: Sunjae Kim
+      - name: Seong-Je Cho
+    venue: "Workshop on Dependable and Secure Computing (WDSC), Jeju, Korea"
+    venue_short: "WDSC"
+    year: 2024
+    slides: https://securesw.dankook.ac.kr/News/pdf/WDSC_2024_%EC%A1%B0%EB%AF%BC%ED%98%81_%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf
+
+patents:
+  - title: "네트워크 동기화 환경 기반 시간 조작 탐지 장치 및 방법"
+    title_en: "Device and Method for Detecting Time Manipulation in a Network-Synchronized Environment"
+    authors:
+      - name: Seong-Je Cho
+      - name: Jiheun Jung
+      - name: Minhyuk Cho
+        self: true
+    application_number: "10-2024-0156364"
+    registration_number: "10-2990306"
+    status: Registered
+    date: Jul. 2026
+    source: https://securesw.dankook.ac.kr/News/news%28paper%26patent%29.html
+
+  - title: "모바일 장치에서 발생한 이벤트 데이터를 수집하고 저장하는 장치 및 방법"
+    title_en: "Device and Method for Collecting and Storing Event Data Generated on a Mobile Device"
+    authors:
+      - name: Seong-Je Cho
+      - name: Minhyuk Cho
+        self: true
+      - name: Seungmin Lee
+      - name: Sungwon Jung
+    application_number: "10-2025-0067605"
+    status: Patent application
+    date: May 2025
+    source: https://securesw.dankook.ac.kr/Publication/patent.html

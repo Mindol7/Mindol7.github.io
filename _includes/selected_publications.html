@@ -1,0 +1,27 @@
+<ol class="publication-list publication-list-compact" role="list">
+{% for publication in site.data.publications.journals %}
+  {% if publication.featured %}
+  <li class="publication-item">
+    <div class="publication-heading">
+      <span class="venue-badge">{{ publication.venue_short }}</span>
+      <span class="publication-year">{{ publication.year }}</span>
+    </div>
+    <h3>{% if publication.doi %}<a href="{{ publication.doi }}" target="_blank" rel="noopener">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</h3>
+    <p class="publication-venue"><em>{{ publication.venue }}</em></p>
+  </li>
+  {% endif %}
+{% endfor %}
+{% for publication in site.data.publications.conferences %}
+  {% if publication.featured %}
+  <li class="publication-item">
+    <div class="publication-heading">
+      <span class="venue-badge">{{ publication.venue_short }}</span>
+      <span class="publication-year">{{ publication.year }}</span>
+    </div>
+    <h3>{% if publication.page %}<a href="{{ publication.page }}" target="_blank" rel="noopener">{{ publication.title }}</a>{% elsif publication.slides %}<a href="{{ publication.slides }}" target="_blank" rel="noopener">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</h3>
+    <p class="publication-venue"><em>{{ publication.venue }}</em></p>
+    {% if publication.award %}<p class="publication-award">{{ publication.award }}</p>{% endif %}
+  </li>
+  {% endif %}
+{% endfor %}
+</ol>
