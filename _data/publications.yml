@@ -59,6 +59,7 @@ domestic_conferences:
     venue_short: "KCC"
     year: 2025
     award: "Excellent Paper Award"
+    page: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318571
 
   - title: "Detecting Timestamp Manipulation in Bluetooth-Connected Smartphone and Automotive Infotainment System"
     authors:
