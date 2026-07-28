@@ -1,6 +1,6 @@
 {% if site.avatar %}
 <a class="image avatar" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-  <img src="{{ site.avatar | relative_url }}" alt="{{ site.avatar_alt | default: site.title }}">
+  <img src="{{ site.avatar | relative_url }}?v={{ site.github.build_revision }}" alt="{{ site.avatar_alt | default: site.title }}">
 </a>
 {% else %}
 <a class="avatar-fallback" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
@@ -38,14 +38,20 @@
 
 <nav class="profile-links" aria-label="Profile links">
   {% if site.cv_link %}
-  <a href="{{ site.cv_link | relative_url }}">CV</a>
+  <a class="profile-icon-link" href="{{ site.cv_link | relative_url }}" aria-label="Curriculum Vitae">
+    <span class="profile-icon profile-icon-cv" aria-hidden="true">CV</span>
+  </a>
   {% endif %}
 
   {% if site.github_link %}
-  <a href="{{ site.github_link }}" target="_blank" rel="noopener">GitHub</a>
+  <a class="profile-icon-link" href="{{ site.github_link }}" target="_blank" rel="noopener" aria-label="GitHub profile">
+    <span class="profile-icon profile-icon-github" aria-hidden="true"></span>
+  </a>
   {% endif %}
 
   {% if site.linkedin %}
-  <a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="profile-icon-link" href="{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+    <span class="profile-icon profile-icon-linkedin" aria-hidden="true"></span>
+  </a>
   {% endif %}
 </nav>

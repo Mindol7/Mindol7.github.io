@@ -6,10 +6,12 @@ homepage built with Jekyll and a customized version of the
 
 ## Content
 
-- `index.md` — introduction, research interests, and recent highlights
-- `publications.md` and `_data/publications.yml` — publications and patents
-- `experience.md` — education, experience, projects, skills, and certifications
-- `honors.md` — awards and scholarships
+- `index.md` — short introduction, news, and contact information
+- `aboutme.md` — biography, education, experience, projects, honors, and skills
+- `publications.md` and `_data/publications.yml` — categorized publications
+- `patents.md` — registered patents and patent applications
+- `honors.md` and `_data/honors.yml` — awards and scholarships
+- `_data/news.yml` — reverse-chronological homepage news
 - `assets/files/Minhyuk_CV.pdf` — privacy-reviewed public CV
 
 Shared page structure is in `_layouts/` and `_includes/`. Site-specific styling
@@ -34,11 +36,13 @@ the repository root. No custom domain is configured.
 
 ## Privacy
 
-The public pages and downloadable CV omit personal phone numbers, third-party
-reference contact details, and confidential project information. The source CV
+The homepage publishes the email address, phone number, and lab location
+provided for public contact. The downloadable CV continues to omit third-party
+reference contact details and confidential project information. The source CV
 is kept outside this repository.
 
 ## License and attribution
 
-The theme source is derived from Minimal Light. See `LICENSE` and the site
-footer for attribution.
+The theme source is derived from Minimal Light. The GitHub and LinkedIn SVG
+icons are from Font Awesome Free 6.4.2; its license is stored with the icons.
+See `LICENSE` and the site footer for additional attribution.

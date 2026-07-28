@@ -1,9 +1,11 @@
 main:
   - title: Home
     url: /
+  - title: Aboutme
+    url: /aboutme/
   - title: Publications
     url: /publications/
-  - title: Experience
-    url: /experience/
-  - title: Honors
+  - title: Patents
+    url: /patents/
+  - title: Honors and Awards
     url: /honors/

@@ -1,0 +1,59 @@
+- date: Jul. 2026
+  datetime: 2026-07
+  text: "A Korean patent on detecting time manipulation in network-synchronized environments was registered."
+  link: /patents/
+
+- date: Apr. 2026
+  datetime: 2026-04
+  text: "I began participating in research projects on on-device AI forensics and the digital-forensics collaboration ecosystem."
+  link: /aboutme/#selected-research-projects
+
+- date: Mar. 2026
+  datetime: 2026-03
+  text: "I began the M.S. program in Information Security at Korea University and joined DFRC."
+  link: /aboutme/#education
+
+- date: Feb. 2026
+  datetime: 2026-02
+  text: "I graduated first in class from Dankook University and received the Academic Excellence Award and Alumni Association Award."
+  link: /honors/
+
+- date: Nov. 2025
+  datetime: 2025-11
+  text: "I received the Grand Prize at the AI Prompt Template Contest 2025."
+  link: /honors/
+
+- date: Sep. 2025
+  datetime: 2025-09
+  text: "I completed the 3rd cohort of WhiteHat School."
+  link: /aboutme/#additional-experience
+
+- date: Sep. 2025
+  datetime: 2025-09
+  text: "I received an Academic Excellence Scholarship from Dankook University."
+  link: /honors/#scholarships
+
+- date: Jul. 2025
+  datetime: 2025-07
+  text: "Our KCC 2025 paper received an Excellent Paper Award."
+  link: /publications/#domestic-conference-publications
+
+- date: May 2025
+  datetime: 2025-05
+  text: "A Korean patent application on collecting and storing mobile-device event data was filed."
+  link: /patents/
+
+- date: Mar. 2025
+  datetime: 2025-03
+  text: "I received an Academic Excellence Scholarship from Dankook University."
+  link: /honors/#scholarships
+
+- date: "2024"
+  datetime: 2024
+  text: "Our timestamp-manipulation study was published in KINGComputing."
+  link: /publications/#domestic-journal-publications
+
+- date: "2024"
+  datetime: 2024
+  text: "I presented vehicle-forensics studies at ICNGC and WDSC."
+  link: /publications/

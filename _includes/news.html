@@ -1,0 +1,29 @@
+<section class="home-section" aria-labelledby="news-heading">
+  <h2 id="news-heading">News</h2>
+
+  <ul class="news-list">
+  {% for item in site.data.news limit: 5 %}
+    <li>
+      <time datetime="{{ item.datetime }}">[{{ item.date }}]</time>
+      {% if item.link %}<a href="{{ item.link | relative_url }}">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+
+  {% if site.data.news.size > 5 %}
+  <details class="news-more">
+    <summary>
+      <span class="news-more-closed">Show more</span>
+      <span class="news-more-open">Show less</span>
+    </summary>
+    <ul class="news-list news-list-more">
+    {% for item in site.data.news offset: 5 %}
+      <li>
+        <time datetime="{{ item.datetime }}">[{{ item.date }}]</time>
+        {% if item.link %}<a href="{{ item.link | relative_url }}">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </details>
+  {% endif %}
+</section>

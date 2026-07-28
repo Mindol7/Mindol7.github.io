@@ -1,4 +1,4 @@
-journals:
+international_journals:
   - title: "AEGIS: A Robust Log Preservation and Anti-Forensics Resilient Framework for Android Digital Investigation"
     authors:
       - name: Minhyuk Cho
@@ -10,8 +10,29 @@ journals:
     venue: "Forensic Science International: Digital Investigation"
     venue_short: "FSI: Digital Investigation"
     year: 2026
-    featured: true
+    journal_url: https://www.sciencedirect.com/journal/forensic-science-international-digital-investigation
+    metrics_url: https://www.sciencedirect.com/journal/forensic-science-international-digital-investigation/about/insights
+    impact_factor_url: https://www.sciencedirect.com/journal/forensic-science-international-digital-investigation/about/insights
+    indexing_url: https://mjl.clarivate.com/search-results?issn=2666-2817
+    scopus_url: https://www.scopus.com/sourceid/21101032719
+    indexing: "SCIE-indexed"
+    scopus_quartile: "Scopus Q1 (selected subject categories)"
+    impact_factor: "3.1"
+    acceptance_rate: "9%"
 
+international_conferences:
+  - title: "Effects of Timestamp Manipulation in a Car Audio Video Navigation System Connected to a Smartphone via Bluetooth: A Preliminary Study"
+    authors:
+      - name: Minhyuk Cho
+        self: true
+      - name: Sunjae Kim
+      - name: Seong-Je Cho
+    venue: "The 10th International Conference on Next Generation Computing (ICNGC), Clark, Philippines, pp. 173–176"
+    venue_short: "ICNGC"
+    year: 2024
+    page: https://www.earticle.net/Article/A468837
+
+domestic_journals:
   - title: "Log Analysis Techniques for Identifying Timestamp Manipulation in Linux and Android Systems"
     authors:
       - name: San Lee
@@ -22,10 +43,10 @@ journals:
     venue: "The Journal of Korean Institute of Next Generation Computing, 20(4), 34–45"
     venue_short: "KINGComputing"
     year: 2024
+    indexing: KCI
     doi: https://doi.org/10.23019/kingpc.20.4.202408.003
-    featured: true
 
-conferences:
+domestic_conferences:
   - title: "Security Vulnerability Analysis and Exploitation of the Copy-and-Patch JIT Compiler Mechanism in CPython"
     authors:
       - name: Minhyuk Cho
@@ -38,18 +59,6 @@ conferences:
     venue_short: "KCC"
     year: 2025
     award: "Excellent Paper Award"
-    featured: true
-
-  - title: "Effects of Timestamp Manipulation in a Car Audio Video Navigation System Connected to a Smartphone via Bluetooth: A Preliminary Study"
-    authors:
-      - name: Minhyuk Cho
-        self: true
-      - name: Sunjae Kim
-      - name: Seong-Je Cho
-    venue: "The 10th International Conference on Next Generation Computing (ICNGC), Clark, Philippines, 173–176"
-    venue_short: "ICNGC"
-    year: 2024
-    page: https://www.earticle.net/Article/A468837
 
   - title: "Detecting Timestamp Manipulation in Bluetooth-Connected Smartphone and Automotive Infotainment System"
     authors:
@@ -87,6 +96,6 @@ patents:
       - name: Seungmin Lee
       - name: Sungwon Jung
     application_number: "10-2025-0067605"
-    status: Patent application
+    status: Patent Application
     date: May 2025
     source: https://securesw.dankook.ac.kr/Publication/patent.html
