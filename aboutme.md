@@ -35,7 +35,7 @@ Before joining Korea University, I studied Mobile Systems Engineering at [Dankoo
   </div>
   <p class="entry-subtitle">B.S. in Mobile Systems Engineering · Yongin, South Korea</p>
   <ul>
-    <li><strong>GPA: 4.25 / 4.25</strong> · <strong>Major GPA: 4.25 / 4.25</strong></li>
+    <li><strong>GPA: 4.25 / 4.5</strong> · <strong>Major GPA: 4.25 / 4.5</strong></li>
     <li><strong>First Class Graduated</strong></li>
     <li>Military leave of absence during 2021–2023</li>
   </ul>
