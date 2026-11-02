@@ -1,3 +1,13 @@
+- date: Nov. 2026
+  datetime: 2026-11
+  text: "Our paper on source-level logging for LLM inference engines was accepted to CISC-W'26."
+  link: /publications/#domestic-conference-publications
+
+- date: Sep. 2026
+  datetime: 2026-09
+  text: "I began participating in a research project on developing an AI foundation model specialized for cybersecurity."
+  link: /aboutme/#selected-research-projects
+
 - date: Jul. 2026
   datetime: 2026-07
   text: "Our paper AEGIS was accepted for publication in FSI: Digital Investigation."

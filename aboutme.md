@@ -65,6 +65,10 @@ Before joining Korea University, I studied Mobile Systems Engineering at [Dankoo
 
 <ul class="detail-list project-list">
   <li>
+    <strong>Development of an AI Foundation Model Specialized for Cybersecurity</strong>
+    <span>Sep. 2026 – Present · Funded by the Korea Institute of Police Technology (KIPoT)</span>
+  </li>
+  <li>
     <strong>Development of Forensic Technologies for On-Device AI Models</strong>
     <span>Apr. 2026 – Present · Funded by the Korea Institute of Police Technology (KIPoT)</span>
   </li>

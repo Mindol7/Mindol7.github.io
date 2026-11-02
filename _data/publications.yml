@@ -48,6 +48,16 @@ domestic_journals:
     doi: https://doi.org/10.23019/kingpc.20.4.202408.003
 
 domestic_conferences:
+  - title: "LLM 추론 엔진의 취약점 탐지 및 사고 대응을 위한 소스 레벨 로깅 방안 연구"
+    authors:
+      - name: Minhyuk Cho
+        self: true
+      - name: Sueun Jung
+      - name: Jungheum Park
+    venue: "Conference on Information Security and Cryptology – Winter (CISC-W'26), Yeosu, Korea"
+    venue_short: "한국정보보호학회 동계학술대회 (CISC-W)"
+    year: 2026
+
   - title: "Security Vulnerability Analysis and Exploitation of the Copy-and-Patch JIT Compiler Mechanism in CPython"
     authors:
       - name: Minhyuk Cho

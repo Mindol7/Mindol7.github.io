@@ -37,9 +37,9 @@ the repository root. No custom domain is configured.
 ## Privacy
 
 The homepage publishes the email address, phone number, and lab location
-provided for public contact. The downloadable CV continues to omit third-party
-reference contact details and confidential project information. The source CV
-is kept outside this repository.
+provided for public contact. The downloadable CV includes reference contact
+details and omits confidential project information. The source CV is kept
+outside this repository.
 
 ## License and attribution
 
