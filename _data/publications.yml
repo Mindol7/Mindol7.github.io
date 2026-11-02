@@ -57,6 +57,7 @@ domestic_conferences:
     venue: "Conference on Information Security and Cryptology – Winter (CISC-W'26), Yeosu, Korea"
     venue_short: "한국정보보호학회 동계학술대회 (CISC-W)"
     year: 2026
+    page: https://www.cisc.or.kr/
 
   - title: "Security Vulnerability Analysis and Exploitation of the Copy-and-Patch JIT Compiler Mechanism in CPython"
     authors:
